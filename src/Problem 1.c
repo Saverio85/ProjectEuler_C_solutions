@@ -1,11 +1,12 @@
 #include "stdio.h"
-#define max 1000
+#include "lib/common.h"
 
-int isMultiple(int n, int m);
+#define max 1000
 
 int main()
 {
 	int sum = 0;
+	
 	for(int i = 0; i < max; i++)
 	{
 		if(isMultiple(i, 3) || isMultiple(i, 5))
@@ -16,9 +17,4 @@ int main()
 
 	printf("%d\n", sum);
 	return 0;
-}
-
-int isMultiple(int n,int m)
-{
-	return n % m == 0;
 }
