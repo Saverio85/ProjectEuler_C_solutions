@@ -80,12 +80,9 @@ int list_size(list *list)
 void list_for_each(list *list, listIterator iterator)
 {
 	assert(iterator != NULL);
-	printf("Entered foreach\n");
 	listNode *node = list->head;
 	bool result = true;
 	while(node != NULL && result) {
-		printf("Looping\n");
-		fflush(stdin);
 		result = iterator(node->data);
 		node = node->next;
 	}

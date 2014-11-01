@@ -11,7 +11,6 @@ long getData(void *data);
 
 int main()
 {
-	//long target = 600851475143;
 	list *primes = factors(target);
 	long result = getData(primes->tail->data);
 	printf("The maximum factor in %ld is %ld\n", target, result);
