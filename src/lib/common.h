@@ -1,6 +1,12 @@
 #ifndef _LIBCOMMON_H_
+#define _LIBCOMMON_H_
+
+	# include "linkedlist.h"
 
 	// Detects whether or not a number n is multiple of a number m
-	int isMultiple(int n,int m);
+	long isMultiple(long n,long m);
+
+	// Returns an array containing the prime factorization of a number
+	list* factors(long n);
 
 #endif

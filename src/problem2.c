@@ -5,7 +5,7 @@
 
 int main()
 {
-	long a = 1, b = 1, evenFibonacciSum;
+	long a = 1, b = 1, evenFibonacciSum = 0;
 
 	while(a < max)
 	{
