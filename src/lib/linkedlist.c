@@ -82,7 +82,8 @@ void list_for_each(list *list, listIterator iterator)
 	assert(iterator != NULL);
 	listNode *node = list->head;
 	bool result = true;
-	while(node != NULL && result) {
+	while(node != NULL && result) 
+	{
 		result = iterator(node->data);
 		node = node->next;
 	}

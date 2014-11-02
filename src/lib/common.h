@@ -9,4 +9,7 @@
 	// Returns an array containing the prime factorization of a number
 	list* factors(long n);
 
+	// gets the long value stored at a void pointer location
+	long getLongData(void *data);
+
 #endif

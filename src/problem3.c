@@ -12,14 +12,7 @@ long getData(void *data);
 int main()
 {
 	list *primes = factors(target);
-	long result = getData(primes->tail->data);
+	long result = getLongData(primes->tail->data);
 	printf("The maximum factor in %ld is %ld\n", target, result);
 	return 0;
-}
-
-long getData(void *data)
-{
-	long *l = malloc(sizeof(long));
-	memcpy(l, data, sizeof(long));
-	return *l;
 }

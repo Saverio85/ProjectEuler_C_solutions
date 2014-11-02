@@ -1,8 +1,10 @@
+#include "math.h"
+#include "stdlib.h"
+#include "stdio.h"
+#include "string.h"
+
 #include "common.h"
 #include "linkedlist.h"
-#include "stdlib.h"
-#include "math.h"
-#include "stdio.h"
 
 long isMultiple(long n,long m)
 {
@@ -12,6 +14,13 @@ long isMultiple(long n,long m)
 long ceilSqrt(long n)
 {
 	return (long)(ceil(sqrt(n)));
+}
+
+long getLongData(void *data)
+{
+	long *target = malloc(sizeof(long));
+	memcpy(target, data, sizeof(long));
+	return *target;
 }
 
 list* factors(long n)
