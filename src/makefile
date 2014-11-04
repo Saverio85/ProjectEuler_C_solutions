@@ -24,7 +24,7 @@ CFLAGS  = -g -O -Wall -Weffc++ -pedantic  \
     -Wvolatile-register-var  -Wwrite-strings
 CCOMMON = lib/common.o lib/linkedlist.o
 
-default: problem12
+default: problem13
 
 problem1:  common.o linkedlist.o
 	$(CC) $(CFLAGS) -o problem1 problem1.c $(CCOMMON) 
@@ -61,6 +61,9 @@ problem11:  common.o linkedlist.o
 
 problem12:  common.o linkedlist.o 
 	$(CC) $(CFLAGS) -o problem12 problem12.c $(CCOMMON)
+
+problem13:  common.o linkedlist.o 
+	$(CC) $(CFLAGS) -o problem13 problem13.c $(CCOMMON)
 
 common.o:
 	$(CC) $(CFLAGS) -c lib/common.c -o lib/common.o
