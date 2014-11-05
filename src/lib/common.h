@@ -12,4 +12,16 @@
 	// gets the long value stored at a void pointer location
 	long getLongData(void *data);
 
+	// return the maximum element in the array
+	int maxIntArray(int* arr, int size);
+
+	//print the int array
+	void printIntArray(int* arr, int size);
+
+	// return the maximum element in the array
+	int maxLongArray(long* arr, int size);
+
+	//print the int array
+	void printLongArray(long* arr, int size);
+
 #endif
