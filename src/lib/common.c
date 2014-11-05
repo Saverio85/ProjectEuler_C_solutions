@@ -107,3 +107,14 @@ list* factors(long n)
 	}
 	return lst;
 }
+
+void aggregateList(list *lst, int arr[])
+{
+	listNode* current = lst->head;
+	while(current != NULL)
+	{
+		long prime = getLongData(current->data);
+		arr[prime]++;
+		current = current->next;
+	}
+}

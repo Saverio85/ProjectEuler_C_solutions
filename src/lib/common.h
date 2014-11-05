@@ -24,4 +24,8 @@
 	//print the int array
 	void printLongArray(long* arr, int size);
 
+	//modifies arr to contain a count of how many times each element in lst appears
+	// !!!!! only works for longs
+	void aggregateList(list *lst, int arr[]);
+
 #endif
