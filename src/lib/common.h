@@ -28,4 +28,15 @@
 	// !!!!! only works for longs
 	void aggregateList(list *lst, int arr[]);
 
+	//sum using strings
+	char *sum(char *a, char *b);
+
+	// creates a new string and initializes it with several zeroes
+	char *createAndInitialize(int n);
+
+	char getValue(char *str, int n);
+
+	int getMaxLength(char *a, char *b);
+	char *trimLeadingZeroes(char *str);
+
 #endif
