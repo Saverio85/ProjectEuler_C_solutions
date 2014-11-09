@@ -41,4 +41,11 @@
 	int getMaxLength(char *a, char *b);
 	char *trimLeadingZeroes(char *str);
 
+	// scalar product of a string (our bigint) times an integer
+	char* scalarProduct(char *a, int n);
+	// generate the zero string for our simple bigint implementation
+	char *zeroString();
+	// computes the factorial of a number in our bigint implementation
+	char* factorial(int n);
+
 #endif

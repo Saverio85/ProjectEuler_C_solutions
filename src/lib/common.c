@@ -153,6 +153,39 @@ char *sum(char *a, char *b)
 	return trimLeadingZeroes(result);
 }
 
+char* scalarProduct(char *a, int n)
+{
+	assert(n > 0);
+	char *result = zeroString();
+
+	for(int i = 0; i < n; i++)
+	{
+		result = sum(result, a);
+	}
+
+	return result;
+}
+
+char* factorial(int n)
+{
+	assert(n > 0);
+	char *result = zeroString();
+	result[0] = '1';
+
+	for(int i = 1; i <= n; i++)
+	{
+		result = scalarProduct(result, i);
+	}
+	return result;
+}
+
+char *zeroString()
+{
+	char *result = createAndInitialize(2);
+	result[0] = '0';
+	return result;
+}
+
 char *trimLeadingZeroes(char *str)
 {
 	if(str == NULL)
