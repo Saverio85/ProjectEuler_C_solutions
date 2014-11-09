@@ -3,6 +3,8 @@
 
 	# include "linkedlist.h"
 
+	int maxInt(int a, int b);
+
 	// Detects whether or not a number n is multiple of a number m
 	long isMultiple(long n,long m);
 

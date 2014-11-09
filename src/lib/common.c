@@ -7,6 +7,16 @@
 #include "common.h"
 #include "linkedlist.h"
 
+int maxInt(int a, int b)
+{
+	if(a > b)
+	{
+		return a;
+	}
+	return b;
+}
+
+
 long isMultiple(long n,long m)
 {
 	return n % m == 0;
