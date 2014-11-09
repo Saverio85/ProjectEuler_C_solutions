@@ -22,18 +22,21 @@ CFLAGS  = -g -O -Wall -Weffc++ -pedantic  \
     -Wunused-function  -Wunused-label  -Wunused-parameter \
     -Wunused-value  -Wunused-variable  -Wvariadic-macros \
     -Wvolatile-register-var  -Wwrite-strings
-CCOMMON = lib/common.o lib/linkedlist.o
+CCOMMON = lib/common.o lib/linkedlist.o lib/numerics.o
 
-default: problem22
+default: problem23
 
-problem22:  common.o linkedlist.o
-	$(CC) $(CFLAGS) -o problem22 problem22.c $(CCOMMON) 
+problem23:  common.o linkedlist.o numerics.o
+	$(CC) $(CFLAGS) -o problem23 problem23.c $(CCOMMON) 
 
 common.o:
 	$(CC) $(CFLAGS) -c lib/common.c -o lib/common.o
 
 linkedlist.o:
 	$(CC) $(CFLAGS) -c lib/linkedlist.c -o lib/linkedlist.o
+
+numerics.o:
+	$(CC) $(CFLAGS) -c lib/numerics.c -o lib/numerics.o
 
 clean: 
 	$(RM) count *.o *~
